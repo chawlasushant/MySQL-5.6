@@ -4,7 +4,7 @@ RUN rpm -ivh http://dev.mysql.com/get/mysql-community-release-el6-5.noarch.rpm
 RUN yum install -y mysql-community-client mysql-community-server
 ADD mysql.sh /tmp/
 ADD run.sh /tmp/
-ADD my.cnf.new /etc/my.cnf
+ADD my.cnf /etc/my.cnf
 RUN chmod 755 /tmp/mysql.sh
 RUN chmod 755 /tmp/run.sh
 EXPOSE 3306
