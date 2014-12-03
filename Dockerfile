@@ -11,7 +11,6 @@ EXPOSE 3306
 
 RUN yum install -y httpd httpd-devel php-mysqli php-mbstring php-mysql php php-d                                                                                        evel
 ADD phpmyadmin /var/www/html/
-ADD test.php /var/www/html/
 RUN chown apache.apache /var/www/html/* -R
 EXPOSE 80
 
